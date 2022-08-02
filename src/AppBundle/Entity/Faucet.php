@@ -2,6 +2,7 @@
 
 namespace AppBundle\Entity;
 
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -51,14 +52,14 @@ class Faucet
     private $duration;
 
     /**
-     * @var \DateTime
+     * @var DateTime
      *
      * @ORM\Column(name="until", type="datetime", options={"default" = "CURRENT_TIMESTAMP"})
      */
     private $until;
 
     /**
-     * @var \DateTime
+     * @var DateTime
      *
      * @ORM\Column(name="updated", type="datetime", options={"default" = "CURRENT_TIMESTAMP"})
      */
@@ -72,7 +73,7 @@ class Faucet
     private $priority;
 
     /**
-     * @var \DateTime
+     * @var DateTime
      *
      * @ORM\Column(name="ban_until", type="datetime", options={"default" = "CURRENT_TIMESTAMP"})
      */
@@ -202,7 +203,7 @@ class Faucet
     /**
      * Set until
      *
-     * @param \DateTime $until
+     * @param DateTime $until
      *
      * @return Faucet
      */
@@ -216,7 +217,7 @@ class Faucet
     /**
      * Get until
      *
-     * @return \DateTime
+     * @return DateTime
      */
     public function getUntil()
     {
@@ -226,7 +227,7 @@ class Faucet
     /**
      * Set updated
      *
-     * @param \DateTime $updated
+     * @param DateTime $updated
      *
      * @return Faucet
      */
@@ -240,7 +241,7 @@ class Faucet
     /**
      * Get updated
      *
-     * @return \DateTime
+     * @return DateTime
      */
     public function getUpdated()
     {
@@ -274,7 +275,7 @@ class Faucet
     /**
      * Set banUntil
      *
-     * @param \DateTime $banUntil
+     * @param DateTime $banUntil
      *
      * @return Faucet
      */
@@ -288,7 +289,7 @@ class Faucet
     /**
      * Get banUntil
      *
-     * @return \DateTime
+     * @return DateTime
      */
     public function getBanUntil()
     {
